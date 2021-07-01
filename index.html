@@ -141,6 +141,16 @@
         </section>
       </section>
     </section>
-    <script></script>
+    <script>
+      let input = document.querySelector("#toggle");
+      console.log(input);
+      input.addEventListener("click", () => {
+        if (input.checked) {
+          document.documentElement.setAttribute("data-value", "dark");
+        } else {
+          document.documentElement.setAttribute("data-value", "light");
+        }
+      });
+    </script>
   </body>
 </html>
